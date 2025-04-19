@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:elevation="5dp"
+    android:background="@drawable/border_edittext"
+    android:backgroundTint="@android:color/transparent"
+    >
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="10sp"
+        android:alpha="0.9"
+        android:background="@drawable/rounded_image"
+        android:padding="4sp"
+        android:src="@drawable/person_icon" />
+
+    <LinearLayout
+        android:layout_toRightOf="@id/profile_pic"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="-10sp"
+            android:textColor="#063708"
+            android:fontFamily="@font/robotoslamedium"
+            android:text="Aarin Sheik" />
+
+        <LinearLayout
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/recent_chatPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:fontFamily="@font/poppins_regular"
+                android:text=""
+                android:textColor="#393A39"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/recent_chatTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
+                android:fontFamily="@font/poppins_regular"
+                android:text=""
+                android:textColor="#393A39"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

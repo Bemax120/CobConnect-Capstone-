@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">CobConnect8</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="price_format">%s</string>
+    <string name="rating_format">⭐ %s (Avg. ratings)</string>
+    <string name="stock_format">Stock: %d</string>
+    <string name="error_loading_product">Failed to load product details.</string>
+    <string name="error_loading_sizes">Failed to load sizes.</string>
+    <string name="error_loading_reviews">Failed to load reviews.</string>
+
+    <string name="back">Back</string>
+    <string name="cart">Cart</string>
+    <string name="reviews">Reviews</string>
+    <string name="coupons">Coupons</string>
+
+
+    <string-array name="payment_methods">
+        <item>Stripe</item>
+        <item>COD</item>
+        <item>GCash</item>
+        <item>PayPal</item>
+    </string-array>
+
+</resources>

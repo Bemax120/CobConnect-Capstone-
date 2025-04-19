@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "1023680543587",
+    "project_id": "cobconnectapp",
+    "storage_bucket": "cobconnectapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023680543587:android:7df2b317bbd9f744d0f156",
+        "android_client_info": {
+          "package_name": "com.capstonecobconnect.cobconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsmJoBDojvgHHP3kbCxDX9aH9Xoq-Hkyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023680543587:android:6eb3cded95fddfc5d0f156",
+        "android_client_info": {
+          "package_name": "com.capstonecobconnect.cobconnect3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsmJoBDojvgHHP3kbCxDX9aH9Xoq-Hkyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023680543587:android:a64164ae00cc5e40d0f156",
+        "android_client_info": {
+          "package_name": "com.capstonecobconnect.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsmJoBDojvgHHP3kbCxDX9aH9Xoq-Hkyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

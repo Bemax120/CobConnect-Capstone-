@@ -1,0 +1,141 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".services.ServiceRequestFormActivity">
+
+    <!-- Your fragment -->
+    <fragment
+        android:id="@+id/fragmentSR"
+        android:name="com.capstonecobconnect.myapplication.HomeBlankFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Bottom Sheet -->
+    <FrameLayout
+        android:id="@+id/sheet"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:background="@drawable/border_lv_srf"
+            android:layout_marginBottom="35dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/line"
+                    android:backgroundTint="@color/gray"
+                    android:layout_marginTop="-12dp"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Recent Selection"
+                    android:textSize="13sp"
+                    android:textColor="@color/white" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="400dp"/>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+
+    <!-- Bottom Action Bar -->
+    <LinearLayout
+        android:id="@+id/linearLayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="#81062E62"
+        >
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_weight="1.6"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:background="@drawable/border_cob_home"
+            android:backgroundTint="#81062E62"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+
+
+            />
+
+        <Button
+            android:id="@+id/review_btn"
+            android:layout_weight="1.3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Review to submit"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:enabled="false"
+            android:background="@drawable/border_cob_home"
+            android:backgroundTint="#81062E62"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/border_cob_home"
+            android:backgroundTint="#81062E62"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            >
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Total Price:"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+              />
+
+            <TextView
+                android:id="@+id/price_tv"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text="Price"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

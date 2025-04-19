@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/imgCob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="140dp"
+                android:id="@+id/cobImg"
+                android:layout_width="300dp"
+                android:layout_height="190dp"
+                android:background="@drawable/cob_img"
+               android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:id="@+id/coblogo"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/cobImg"
+                android:layout_marginTop="-30dp"
+                android:background="@drawable/cob_logo"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"/>
+
+            <ScrollView
+                android:id="@+id/box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/coblogo">
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_login"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:layout_gravity="center_horizontal"
+                    >
+
+                    <EditText
+                        android:id="@+id/email_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Email"
+                        android:textSize="15sp"
+                        android:textColorHint="#DC494646"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black"
+                        android:paddingLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/border_edittext"
+                        android:drawableLeft="@drawable/email_icon"
+                        android:drawablePadding="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"/>
+
+                    <EditText
+                        android:id="@+id/password_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#DC494646"
+                        android:paddingLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/border_edittext"
+                        android:drawableLeft="@drawable/password_icon"
+                        android:drawablePadding="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:drawableRight="@drawable/eye_icon"
+                        android:paddingRight="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <CheckBox
+                            android:id="@+id/remember_me_checkbox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:text="Remember me"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            tools:ignore="TouchTargetSizeCheck"
+                            android:textSize="13sp"/>
+
+                        <TextView
+                            android:id="@+id/forgot_password_text_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Forgot Password?"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:paddingLeft="20dp"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/login_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Login"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:background="@drawable/border_edittext"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="3dp">
+                        <TextView
+                            android:id="@+id/create_account_text_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Don't have an account?"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+                        <TextView
+                            android:id="@+id/create_accTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:text="Create an Account"
+                            android:textSize="13sp"
+                            android:gravity="end"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:layout_below="@id/box">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="50sp"/>
+            </LinearLayout>
+            <ProgressBar
+                android:id="@+id/loading_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

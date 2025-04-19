@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/rounded_background"
+    android:elevation="6dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/popup_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification Message"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:paddingBottom="10dp" />
+
+    <Button
+        android:id="@+id/popup_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dismiss" />
+</LinearLayout>

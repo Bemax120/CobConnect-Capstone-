@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@drawable/border_edittext"
+    android:backgroundTint="#DCE4DCDC"
+    android:orientation="horizontal"
+    android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5.1"
+        android:padding="1dp"
+        android:layout_marginTop="6dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/historyImage"
+            android:layout_marginLeft="6dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/img_pp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3.3"
+        android:orientation="vertical"
+        android:padding="6dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/historyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jefre Mandawe"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/historyDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date: 02/23/25"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/historyPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="₱200"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="4.6">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="90dp"
+            android:background="#AEA7A7"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/dtls"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+</LinearLayout>

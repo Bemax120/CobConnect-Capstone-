@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_white_gradient">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <EditText
+                android:id="@+id/searchPlace"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:hint="Search here ..."
+                android:background="@drawable/border_edittext_map"/>
+
+            <ScrollView
+                android:id="@+id/sv_lv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:fillViewport="true"
+                android:visibility="gone"
+                >
+
+                <ListView
+                    android:id="@+id/lv_places"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:scrollbars="vertical"
+                    />
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_lv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="120dp"
+            android:visibility="gone"/>
+
+
+        <Button
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/get_location_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="17sp"
+            android:text="Get Location"
+            android:backgroundTint="@color/wallet_holo_blue_light"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/border_edittext"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

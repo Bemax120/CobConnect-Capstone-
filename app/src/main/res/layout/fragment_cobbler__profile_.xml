@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cobblers.Cobbler_Profile_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/editProfileCob"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/edit_icon"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Information"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"/>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/profileImgCob"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_radius"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/fullNameCob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Rates"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-black"
+                        />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/img_13"/>
+
+                            <TextView
+                                android:id="@+id/totalRate"
+                                android:text="5/5"
+                                android:layout_width="35dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="17sp"
+                                android:textColor="@color/black"
+                                android:layout_marginStart="5dp"
+                                />
+
+                            <TextView
+                                android:text="(10k Reviews)"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contact Information"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/black"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Phone number"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:paddingRight="20dp"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/phoneCob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:padding="10dp"
+                        android:drawableLeft="@drawable/phone_icon"
+                        android:drawablePadding="20dp"
+                        android:background="@drawable/border_only"
+                        android:textIsSelectable="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:paddingRight="20dp"/>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/emailCob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:drawableLeft="@drawable/email_icon"
+                    android:drawablePadding="20dp"
+                    android:background="@drawable/border_only"
+                    android:textIsSelectable="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:paddingRight="20dp"/>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/addressCob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:drawableLeft="@drawable/location_icon"
+                    android:drawablePadding="20dp"
+                    android:background="@drawable/border_only"
+                    android:textIsSelectable="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Account"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/changePassCob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Change Password"
+                            android:textSize="17dp"
+                            android:textStyle="bold"
+                            android:textColor="#333232"
+                            android:layout_marginTop="10dp"
+                            android:drawableEnd="@drawable/edit_back_icon"
+                            android:paddingRight="20dp"/>
+
+
+                        <TextView
+                            android:id="@+id/technicalSupportCob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Technical Support"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#333232"
+                            android:drawableEnd="@drawable/edit_back_icon"
+                            android:paddingRight="20dp"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/logOutCob"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Log Out"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:textAllCaps="false"
+                        android:background="@drawable/border_edittext_map"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="50dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

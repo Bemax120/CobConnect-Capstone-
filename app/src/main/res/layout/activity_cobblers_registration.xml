@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_white_gradient"
+    >
+
+    <LinearLayout
+        android:id="@+id/cob_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/create_account_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="0dp"
+            android:layout_below="@+id/relativeTop"
+            android:background="@drawable/cob_logo"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/createAccView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/cob_logo">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Now!"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"/>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="516dp"
+        android:layout_below="@+id/createAccView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="7dp">
+
+        <LinearLayout
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/COB_email_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="13sp"
+                android:background="@drawable/border_edittext"
+                android:drawableLeft="@drawable/email_icon"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="#5E5C5C" />
+
+            <EditText
+                android:id="@+id/COB_fName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="13sp"
+                android:background="@drawable/border_edittext"
+                android:drawableLeft="@drawable/person_icon"
+                android:drawablePadding="10dp"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="#5E5C5C" />
+
+            <EditText
+                android:id="@+id/COB_lName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="13sp"
+                android:background="@drawable/border_edittext"
+                android:drawableLeft="@drawable/person_icon"
+                android:drawablePadding="10dp"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="#5E5C5C" />
+
+
+            <EditText
+                android:id="@+id/COB_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="13sp"
+                android:background="@drawable/border_edittext"
+                android:drawableLeft="@drawable/password_icon"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:drawableRight="@drawable/eye_icon"
+                android:textColor="@color/black"
+                android:textColorHint="#5E5C5C" />
+
+            <EditText
+                android:id="@+id/COB_repeat_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="13sp"
+                android:background="@drawable/border_edittext"
+                android:drawableLeft="@drawable/password_icon"
+                android:drawablePadding="10dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:drawableRight="@drawable/eye_icon"
+                android:textColor="@color/black"
+                android:textColorHint="#5E5C5C" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Business Permit: "
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/COB_upload_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/border_only"
+                    android:backgroundTint="#4CAF50"
+                    android:text="Upload Files"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/COB_create_account_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_edittext"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:text="Get Started"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/loading_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

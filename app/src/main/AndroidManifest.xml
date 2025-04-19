@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <queries>
+        <package android:name="com.google.android.gms" />
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/cob_img"
+        android:label="CobConnect"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".customers.feedback.Client_Feedback"
+            android:exported="false" />
+        <activity
+            android:name=".customization.ShoeSelection"
+            android:exported="false" />
+        <activity
+            android:name=".customization.CustomizeShoes"
+            android:exported="false" />
+        <activity
+            android:name=".ApplicationNotification"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Main_Notification"
+            android:exported="false" />
+        <activity
+            android:name=".store.client.Information"
+            android:exported="false" />
+        <activity
+            android:name=".services.ReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".services.ServiceRequestFormActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".store.cobblers.CobblerStore_MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".store.client.ShoppingCartAdapter"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".store.client.ShoppingCartActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".store.client.ProductDetailsActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".store.client.MarketPlaceActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".wallet.Wallet_View"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDIc0jC5YzmWFMWKa6OqdTHaq3hIaqbeWw" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="android.opengl.unsafe_disable"
+            android:value="true" />
+
+        <activity
+            android:name=".login"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Home_Page"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".services.Service_Request"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".cobblers.Booking_Page"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Change_Password"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Technical_Support"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".cobblers.Cobblers_Registration"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".cobblers.Cobblers_Home"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Edit_Profile"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".cobblers.Cobblers_Edit_Profile"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Forget_Password"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".cobblers.HomeService.Cobblers_Home_Service"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Maps"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".customers.message.MessageActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".cobblers.Cobblers_Technical_Support"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".cobblers.Cobblers_MessageActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Technical_SupportCob"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".cobblers.Cob_Payment"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

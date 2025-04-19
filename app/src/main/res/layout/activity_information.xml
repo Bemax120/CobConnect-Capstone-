@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tv_place_order"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/skyblue"
+        android:padding="16dp"
+        android:text="Place Order"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Address -->
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Times Square Tamlamban Cebu City"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_place_order"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"/>
+
+    <!-- Item List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_items"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Order Summary Title -->
+    <TextView
+        android:id="@+id/tv_price_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Order Summary"
+        android:textColor="#000000"
+        android:layout_margin="16dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/rv_items"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Subtotal Row -->
+    <TextView
+        android:id="@+id/subTotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Subtotal"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_price_details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/subTotalPrice"
+        />
+
+    <TextView
+        android:id="@+id/subTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₱120"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toTopOf="@id/subTotal"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Shipping Row -->
+    <TextView
+        android:id="@+id/shippingText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Shipping"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/subTotal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/shippingPrice"
+        />
+
+    <TextView
+        android:id="@+id/shippingPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₱50"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toTopOf="@id/shippingText"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Total Row -->
+    <TextView
+        android:id="@+id/totalText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/shippingText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/totalPrice"
+        />
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₱170"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toTopOf="@id/totalText"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+
+
+
+    <!-- Payment Method -->
+
+    <TextView
+        android:id="@+id/pay_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:text="Payment Method"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/totalPrice"
+        />
+
+    <!-- Total + Pay Now -->
+    <RadioGroup
+        android:id="@+id/rg_payment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pay_method">
+
+        <RadioButton
+            android:id="@+id/stripe_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stripe" />
+
+        <RadioButton
+            android:id="@+id/gcash_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paypal" />
+
+        <RadioButton
+            android:id="@+id/cod_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COD" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total ₱0"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="#FF0000"
+            android:textAlignment="textEnd"
+            android:paddingRight="15dp"/>
+
+        <Button
+            android:id="@+id/btn_pay_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay Now"
+            android:background="@drawable/button_checkout"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

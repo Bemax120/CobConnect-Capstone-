@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom">
+
+    <TextView
+        android:id="@+id/reciever_msag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How are you ?"
+        android:maxWidth="270sp"
+        android:textSize="15sp"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginLeft="10sp"
+        android:textColor="@color/white"
+        android:backgroundTint="#009688"
+        android:background="@drawable/custom_background_reciever_msg"
+        />
+
+    <TextView
+        android:id="@+id/reciever_time"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:text="9:00 AM"
+        android:textSize="10sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="4sp"
+        android:layout_alignBottom="@+id/reciever_msag"
+        android:layout_toRightOf="@+id/reciever_msag"/>
+
+</RelativeLayout>

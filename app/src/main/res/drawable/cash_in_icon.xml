@@ -1,0 +1,9 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:src="@drawable/cash_in"
+            android:gravity="center"
+            android:width="20dp"
+            android:height="20dp"/>
+    </item>
+</layer-list>

@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Camera Preview View (You will bind this in your CameraX/Camera2 code) -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter" />
+
+    <!-- Optional overlay instruction -->
+    <TextView
+        android:id="@+id/instruction_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotate the shoe for 360° view"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:padding="8dp" />
+
+    <!-- Capture button -->
+    <ImageButton
+        android:id="@+id/capture_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/circle_shadow"
+        android:scaleType="centerInside"
+        android:src="@drawable/cust_cam"
+        android:contentDescription="Capture" />
+
+    <!-- Optional back button (top-left) -->
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/back_icon"
+        android:backgroundTint="@color/colorBackground"
+        android:padding="8dp"
+        />
+
+</FrameLayout>

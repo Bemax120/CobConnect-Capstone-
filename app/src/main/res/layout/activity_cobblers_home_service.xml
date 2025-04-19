@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".services.Service_Request">
+
+    <LinearLayout
+        android:id="@+id/cobImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4D74D2D6"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Service Request Form"
+            android:textStyle="normal"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cardForm"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/cobImg">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listViewCob"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</RelativeLayout>

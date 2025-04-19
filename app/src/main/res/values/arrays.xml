@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="types">
+        <item>Home Service</item>
+        <item>Walk-in</item>
+    </string-array>
+    <string-array name="status">
+        <item>Success</item>
+        <item>Pending</item>
+        <item>Cancel</item>
+    </string-array>
+</resources>

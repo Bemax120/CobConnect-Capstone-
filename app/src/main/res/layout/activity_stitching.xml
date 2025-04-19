@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".services.StitchingActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@drawable/bg_white_gradient">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Polishing Service Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="15dp">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/polishingTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STITCHING"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="serif-monospace"/>
+
+                <!-- Description -->
+                <TextView
+                    android:id="@+id/polishingDescription"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Stitching involves using a needle and thread or other sewing tools to join materials together, commonly applied in textiles, leatherwork, and medical suturing."
+                    android:textStyle="italic"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginBottom="10dp"/>
+
+                <!-- Image Section -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/img_5stitching"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/rounded_image"
+                        android:clipToOutline="true"
+                        />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Images"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/img_6stitching"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/image_circle"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/img_7stitching"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/image_circle"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/img_8stitching"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/image_circle"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/img_9"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/image_circle"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Videos"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:gravity="center_horizontal"/>
+                <!-- Video Section -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/img_10"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/img_11"
+                        android:scaleType="fitCenter"/>
+
+                </LinearLayout>
+
+
+                <!-- Find Nearby Cobblers Button -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/findCobblersButtonPolishing"
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:text="Find Nearby Cobblers"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/img_12"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Find Nearby Cobblers"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/homeService_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_only"
+                    android:backgroundTint="#4CAF50"
+                    android:gravity="center"
+                    android:text="Stitching Services"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

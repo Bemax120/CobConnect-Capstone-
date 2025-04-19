@@ -1,0 +1,83 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Back Button and Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment methods"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="25dp"/>
+    </LinearLayout>
+
+    <!-- Payment Methods List -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <!-- VISA / Mastercard -->
+        <LinearLayout
+            android:id="@+id/stripe_method"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bordered_button"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="43dp"
+                android:src="@drawable/stripe"/>
+        </LinearLayout>
+
+        <!-- GCash -->
+        <LinearLayout
+            android:id="@+id/gcash_method"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bordered_button"
+            android:gravity="center"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                android:src="@drawable/gcash"/>
+        </LinearLayout>
+
+        <!-- GrabPay -->
+        <LinearLayout
+            android:id="@+id/cod_method"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bordered_button"
+            android:gravity="center"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cod"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

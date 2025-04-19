@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="skyblue">#87CEEB</color>
+
+    <color name="blue">#12B4FD</color>
+    <color name="green">#00FF00</color>
+    <color name="red">#FF0000</color>
+    <color name="gray">#DCDFDFDF</color>
+    <color name="darkgray">#DC505050</color>
+    <color name="lightgray">#DC9D9696</color>
+    <color name="yellow">#F7FFDD00</color>
+    <color name="cobcolor">#4A90E2</color>
+    <color name="gradient">#22c1c3</color>
+    <color name="Lavender">#8692f7</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryLight">#757de8</color>
+    <color name="colorSecondary">#f5a623</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorCart">#F3AF4C</color>
+    <color name="colorBuy">#4CAF50</color>
+
+    <color name="primary">#4361EE</color>
+    <color name="primary_light">#E0E7FF</color>
+    <color name="text">#1E293B</color>
+    <color name="text_light">#64748B</color>
+    <color name="background">#F8FAFC</color>
+    <color name="card">#FFFFFF</color>
+    <color name="border">#E2E8F0</color>
+    <color name="star_filled">#FBBF24</color>
+    <color name="star_empty">#E2E8F0</color>
+</resources>

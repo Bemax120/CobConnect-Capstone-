@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Solid color for the background, you can change the color as needed -->
+    <solid android:color="@android:color/transparent"/>
+
+    <!-- Optional: Border around the oval -->
+    <stroke
+        android:width="2dp"
+        android:color="@android:color/black"/> <!-- You can adjust or remove the stroke -->
+
+</shape>
